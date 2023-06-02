@@ -10,9 +10,9 @@ router.get('/', function (req, res, next) {
 });
 // router.get('/get_user', useControllerUser.showUser)
 /* GET home page. */
-router.get('/get_note', useControllerNote.showNote)
+router.post('/api/get_note', useControllerNote.showNote)
 
-router.get('/get_style', useControllerStyle.showStyle)
+router.get('/api/get_style', useControllerStyle.showStyle)
 // 登录
 router.post('/api/login',useControllerUser.login)
 router.post('/api/register',useControllerUser.register)
